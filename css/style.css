@@ -1,0 +1,252 @@
+/* Main Class */
+body{
+	background-color:#000;
+}
+.overlay{
+	position: relative;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.section{
+	width:100%;
+	padding-top:50px;
+	padding-bottom:50px;
+}
+.section-header{
+	text-transform:capitalize;
+}
+/* Main Class */
+/* Combined Styles */
+.navbar .navbar-nav,
+.navbar .navbar-brand,
+#features .content h4{
+	text-transform: capitalize;
+}
+/* Start Navbar */
+#navbar{
+	width:100%;
+	z-index:999;
+}
+.navbar .form-control{
+	border:none;
+	border-radius:0;
+	border-left:2px solid #28a745;
+	background-color:inherit;
+}
+.navbar .form-control::placeholder{
+	color: #FFF;
+	opacity:0.9;
+}
+.navbar-toggler{
+	font-size: 2rem;
+	margin-left: 39px;
+}
+/* End Navbar */
+/* Start Slider */
+#slider{
+	width:100%;
+	height:100vh;
+	background-image: url('../imgs/slider1.jpeg');
+	background-size:cover;
+	background-position:50% 20%;
+	/* box-shadow: 50px 50px 100px 20px #555 inset,
+						 -50px -50px 100px 20px #555 inset; */
+}
+.first{
+	background-color: #535c68;
+	position: relative;
+}
+.third{
+	/* background-color: #b71540; */
+	background: linear-gradient(#b71540, #e55039);
+}
+h1.display-3{
+	font-weight: bold;
+	position: relative;
+}
+h1.display-3:before{
+	position: absolute;
+	content: "";
+	width:110px;
+	height:2px;
+	background-color: #AAA;
+	top:calc(50% - 2px);
+	left:-120px
+}
+h1.display-3 span{
+	color: #A9ADB3;
+}
+.ex-container{
+	position:absolute;
+	bottom:0;
+	left:0px;
+}
+.explain{
+	font-weight: bold;
+	text-transform: uppercase;
+	position: absolute;
+	margin-left:50px;
+	margin-right:50px;
+	bottom:100px;
+	font-size: .9rem;
+	line-height: 2;
+}
+.next-image{
+	position: absolute;
+	left:-50px;
+	top:21%;
+	box-shadow: 0px 1px 5px 1px #555;
+}
+.my-test{
+	font-size: 23rem;
+	position: absolute;
+	color: #FFF;
+	top:15%;
+	opacity: .1;
+}
+.my-progress{
+	width:4px;
+	position: relative;
+	height:200px;
+	background-color: #AAA;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:280px;
+}
+.my-progress::before{
+	content: "01";
+	position: absolute;
+	left:-7px;
+	top:-50px;
+	color: #FFF;
+}
+.my-progress::after{
+	content: "05";
+	position: absolute;
+	left:-7px;
+	bottom:-50px;
+	color: #FFF;
+}
+.my-progress .how{
+	width:100%;
+	height:20%;
+	background-color: #FFF;
+}
+.my-soc{
+	font-size:3rem;
+	width:100%;
+	position: absolute;
+	bottom:15px;
+}
+.my-soc i{
+	display: block;
+	color: #A9ADB3;
+}
+.my-arrows{
+	position: absolute;
+	bottom: 50px;
+	right:50px;
+	font-size: 1.6rem;
+}
+.my-soc i:not(:last-child){
+	margin-bottom: 15px;
+}
+.content{
+	margin-top:10px;
+}
+/* End Slider */
+/* Start About Us */
+#about-us video{
+	margin:0 auto;
+}
+#about-us h3 i,
+#about-us h4 i{
+	color: #28a745;
+	margin-right:5px;
+}
+#about-us .first-content,
+#about-us .second-content{
+	width:45%;
+}
+#about-us .my-icons{
+	font-size:2.5rem;
+}
+#about-us .my-icons li{
+	transition: all .5s ease-in-out;
+	border-bottom: 2px solid #343a40;
+}
+#about-us .my-icons li:hover{
+	color:#28a745;
+	cursor: pointer;
+	border-bottom: 2px solid #28a745;
+}
+/* End About Us */
+/* Start Services */
+#services ul li i.fa-check{
+	color: #28a745;
+}
+#services ul li i.fa-times{
+	color: #F00;
+	margin-right:5px;
+}
+/* End Services */
+/* Start Features */
+#features .content{
+	background-color:#000;
+	padding:20px;
+	border-radius: 5px;
+	transition: all .5s ease-in-out;
+}
+#features .content:hover{
+	box-shadow: 10px 10px 20px 20px #222;
+	transform: scale(1.01);
+	cursor: pointer;
+}
+/* End Features */
+/* Start Work */
+
+/* End Work */
+/* Start Contact */
+#contact .show-up-case a{
+	color: #28a745;
+}
+#contact .show-up-case a.active{
+	color: #FFF;
+	background-color: #28a745;
+	border-color: #28a745;
+}
+#contact .show-any{
+	max-width:21rem;
+}
+/* End Contact */
+/* Start Footer */
+#footer{
+
+}
+#footer ul li:not(:last-child){
+	border-bottom: 1px solid #28a745;
+	margin-bottom:5px;
+}
+/* End Footer */
+/* Media Query */
+@media (max-width: 576px) {
+	#about-us .first-content,
+	#about-us .second-content{
+		width:100%;
+	}
+	#slider{
+		background-position:30% 15%;
+	}
+}
+@media (max-width: 768px){
+	#services .card{
+		margin-bottom:8px;
+	}
+	#features .content{
+		margin-bottom:8px;
+	}
+}
+/* Media Query */
