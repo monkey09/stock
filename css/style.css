@@ -20,6 +20,11 @@ body{
 }
 /* Main Class */
 /* Combined Styles */
+.navbar .navbar-brand::before,
+	#slider .content h1::before{
+	content: ">";
+	color: #28a745;
+}
 .navbar .navbar-nav,
 .navbar .navbar-brand,
 #features .content h4{
@@ -27,6 +32,7 @@ body{
 }
 /* Start Navbar */
 #navbar{
+	position:absolute;
 	width:100%;
 	z-index:999;
 }
@@ -40,122 +46,24 @@ body{
 	color: #FFF;
 	opacity:0.9;
 }
-.navbar-toggler{
-	font-size: 2rem;
-	margin-left: 39px;
+.navbar .navbar-nav .active{
+	border-bottom:1.9px solid #28a745;
+	padding-bottom:2px;
 }
 /* End Navbar */
 /* Start Slider */
 #slider{
 	width:100%;
-	height:100vh;
+	height:751px;
 	background-image: url('../imgs/slider1.jpeg');
 	background-size:cover;
-	background-position:50% 20%;
-	/* box-shadow: 50px 50px 100px 20px #555 inset,
-						 -50px -50px 100px 20px #555 inset; */
+	background-position:50% 15%;
+	background-attachment: fixed;
+	box-shadow: 50px 50px 100px 20px #555 inset,
+						 -50px -50px 100px 20px #555 inset;
 }
-.first{
-	background-color: #535c68;
-	position: relative;
-}
-.third{
-	/* background-color: #b71540; */
-	background: linear-gradient(#b71540, #e55039);
-}
-h1.display-3{
-	font-weight: bold;
-	position: relative;
-}
-h1.display-3:before{
-	position: absolute;
-	content: "";
-	width:110px;
-	height:2px;
-	background-color: #AAA;
-	top:calc(50% - 2px);
-	left:-120px
-}
-h1.display-3 span{
-	color: #A9ADB3;
-}
-.ex-container{
-	position:absolute;
-	bottom:0;
-	left:0px;
-}
-.explain{
-	font-weight: bold;
-	text-transform: uppercase;
-	position: absolute;
-	margin-left:50px;
-	margin-right:50px;
-	bottom:100px;
-	font-size: .9rem;
-	line-height: 2;
-}
-.next-image{
-	position: absolute;
-	left:-50px;
-	top:21%;
-	box-shadow: 0px 1px 5px 1px #555;
-}
-.my-test{
-	font-size: 23rem;
-	position: absolute;
-	color: #FFF;
-	top:15%;
-	opacity: .1;
-}
-.my-progress{
-	width:4px;
-	position: relative;
-	height:200px;
-	background-color: #AAA;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:280px;
-}
-.my-progress::before{
-	content: "01";
-	position: absolute;
-	left:-7px;
-	top:-50px;
-	color: #FFF;
-}
-.my-progress::after{
-	content: "05";
-	position: absolute;
-	left:-7px;
-	bottom:-50px;
-	color: #FFF;
-}
-.my-progress .how{
-	width:100%;
-	height:20%;
-	background-color: #FFF;
-}
-.my-soc{
-	font-size:3rem;
-	width:100%;
-	position: absolute;
-	bottom:15px;
-}
-.my-soc i{
-	display: block;
-	color: #A9ADB3;
-}
-.my-arrows{
-	position: absolute;
-	bottom: 50px;
-	right:50px;
-	font-size: 1.6rem;
-}
-.my-soc i:not(:last-child){
-	margin-bottom: 15px;
-}
-.content{
-	margin-top:10px;
+#slider .col{
+	padding-top:25%;
 }
 /* End Slider */
 /* Start About Us */
